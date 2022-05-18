@@ -1,0 +1,4 @@
+[22:39:31 WRN] Wrong email format  
+[22:40:04 INF] Sabina Shukur,5/18/2022 9:00-11:00 in Gunel Abdulla was reserved successfully  
+[22:42:00 WRN] Wrong phone number format  
+[22:42:16 INF] fs sdf,5/18/2022 9:00-11:00 in Murad Hasanov was reserved successfully  
