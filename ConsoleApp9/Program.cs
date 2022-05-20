@@ -106,7 +106,7 @@ BPG &@@@@@PP#@@@@@@@@@&#BGPPPGB&@&BGPPPG#@@#BGPPPGB#&#BPPPG#&@@@#BGG#@@BGGB&@@@@
             while (Console.ReadKey().Key != ConsoleKey.E)
             {
                 Console.Clear();
-                string name, surname, email = "", phoneNumber="";
+                string name, surname, email = "", phoneNumber = "";
                 Console.WriteLine("Enter your Name: ");
                 name = Console.ReadLine();
 
@@ -151,19 +151,39 @@ BPG &@@@@@PP#@@@@@@@@@&#BGPPPGB&@&BGPPPG#@@#BGPPPGB#&#BPPPG#&@@@#BGG#@@BGGB&@@@@
 
                 while (isChecked)
                 {
-                    Console.WriteLine("Pls choose one of the branches below\n1.Traumatology\n2.Dentistry\n3.Pediatrics\n");
-                    string? choice = Console.ReadLine();
+                    Console.WriteLine("Pls choose one of the branches below");
+                    var menu = new Menu(new string[] { "Traumatology", "Dentistry", "Pediatrics" });
+                    var menuPainter = new ConsoleMenuPainter(menu);
+
+                    bool done = false;
+
+                    do
+                    {
+                        menuPainter.Paint(8, 5);
+
+                        var keyInfo = Console.ReadKey();
+
+                        switch (keyInfo.Key)
+                        {
+                            case ConsoleKey.UpArrow: menu.MoveUp(); break;
+                            case ConsoleKey.DownArrow: menu.MoveDown(); break;
+                            case ConsoleKey.Enter: done = true; break;
+                        }
+                    }
+                    while (!done);
+
+                    Console.ForegroundColor = ConsoleColor.Cyan;
                     Thread.Sleep(500);
                     Console.Clear();
-                    switch (choice)
+                    switch (menu.SelectedOption)
                     {
-                        case "1":
+                        case "Traumatology":
                             ShowTraumatologists();
                             break;
-                        case "2":
+                        case "Dentistry":
                             ShowDentists();
                             break;
-                        case "3":
+                        case "Pediatrics":
                             ShowPediatricDoctors();
                             break;
 
@@ -179,7 +199,7 @@ BPG &@@@@@PP#@@@@@@@@@&#BGPPPGB&@&BGPPPG#@@#BGPPPGB#&#BPPPG#&@@@#BGG#@@BGGB&@@@@
                         Console.Write("Pls enter the surname the doctor you want to have appointment: ");
                         string? doctorSurname = Console.ReadLine();
 
-                        if (choice == "1")
+                        if (menu.SelectedOption == "Traumatology")
                         {
                             bool isFound = false;
 
@@ -276,7 +296,7 @@ BPG &@@@@@PP#@@@@@@@@@&#BGPPPGB&@&BGPPPG#@@#BGPPPGB#&#BPPPG#&@@@#BGG#@@BGGB&@@@@
                             Thread.Sleep(1500);
                             Console.Clear();
                         }
-                        else if (choice == "2")
+                        else if (menu.SelectedOption == "Dentistry")
                         {
                             bool isFound = false;
                             foreach (var doctor in dentists)
@@ -369,11 +389,11 @@ BPG &@@@@@PP#@@@@@@@@@&#BGPPPGB&@&BGPPPG#@@#BGPPPGB#&#BPPPG#&@@@#BGG#@@BGGB&@@@@
                                 Log.Warning("There is no such a doctor in our clinic");
                                 continue;
                             }
-                            Thread.Sleep(1500);
+                            Thread.Sleep(500);
                             Console.Clear();
                         }
 
-                        else if (choice == "3")
+                        else if (menu.SelectedOption == "Pediatrics")
                         {
                             bool isFound = false;
 
@@ -507,6 +527,5 @@ BPG &@@@@@PP#@@@@@@@@@&#BGPPPGB&@&BGPPPG#@@#BGPPPGB#&#BPPPG#&@@@#BGG#@@BGGB&@@@@
         }
     }
 }
-
 
 

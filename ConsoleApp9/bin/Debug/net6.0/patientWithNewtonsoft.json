@@ -1,13 +1,13 @@
 [
   {
-    "Name": "fs",
-    "Surname": "sdf",
-    "Email": "sa@gmail.co",
-    "PhoneNumber": "0552610797",
+    "Name": "ADS",
+    "Surname": "ADS",
+    "Email": "ADSA@GMAIL.CPD",
+    "PhoneNumber": "2334554455",
     "Doctor": {
-      "Name": "Murad",
-      "Surname": "Hasanov",
-      "Experience": 7,
+      "Name": "Aygul",
+      "Surname": "Nadjafova",
+      "Experience": 12,
       "Branch": "Pediatrics",
       "WorkingHours": [
         "9:00-11:00",
@@ -15,11 +15,11 @@
         "15:00-17:00"
       ],
       "ReservedHours": [
-        "Reserved",
         "UnReserved",
+        "Reserved",
         "UnReserved"
       ]
     },
-    "ReservedTime": "9:00-11:00"
+    "ReservedTime": "12:00-14:00"
   }
 ]

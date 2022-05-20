@@ -2,3 +2,31 @@
 [22:40:04 INF] Sabina Shukur,5/18/2022 9:00-11:00 in Gunel Abdulla was reserved successfully  
 [22:42:00 WRN] Wrong phone number format  
 [22:42:16 INF] fs sdf,5/18/2022 9:00-11:00 in Murad Hasanov was reserved successfully  
+[12:44:27 WRN] Wrong email format  
+[16:29:18 WRN] Wrong email format  
+[16:29:31 WRN] Wrong phone number format  
+[16:29:50 WRN] There is no such a doctor in our clinic  
+[16:30:08 INF] sabina shukurova,5/19/2022 9:00-11:00 in Hasan Abbasov was reserved successfully  
+[16:31:00 WRN] This hour was taken please choose another time  
+[16:31:06 WRN] Wrong working hour format!  
+[16:31:29 WRN] Wrong working hour format!  
+[16:31:37 INF] cefer imamaliyev,5/19/2022 12:00-14:00 in Hasan Abbasov was reserved successfully  
+[16:34:09 WRN] Wrong email format  
+[16:34:20 WRN] Wrong phone number format  
+[16:34:44 INF] Leyla Qocayeva,5/19/2022 12:00-14:00 in Ali Asgarli was reserved successfully  
+[16:35:35 WRN] This hour was taken please choose another time  
+[16:35:42 INF] sebine sukurova,5/19/2022 15:00-17:00 in Ali Asgarli was reserved successfully  
+[16:38:09 WRN] Wrong email format  
+[16:38:59 WRN] Wrong phone number format  
+[16:39:20 INF] sabina sgukue,5/19/2022 12:00-14:00 in Ali Asgarli was reserved successfully  
+[00:43:42 WRN] Wrong email format  
+[00:44:08 WRN] Wrong working hour format!  
+[00:44:13 INF] sabina shukur,5/21/2022 12:00-14:00 in Gunel Abdulla was reserved successfully  
+[00:44:25 WRN] Wrong email format  
+[00:45:53 WRN] There is no such a doctor in our clinic  
+[00:45:58 WRN] There is no such a doctor in our clinic  
+[00:46:04 WRN] There is no such a doctor in our clinic  
+[00:46:14 INF] ADS ADS,5/21/2022 12:00-14:00 in Aygul Nadjafova was reserved successfully  
+[00:49:50 WRN] Wrong input  
+[00:50:21 WRN] Wrong input  
+[00:50:30 WRN] Wrong input  
